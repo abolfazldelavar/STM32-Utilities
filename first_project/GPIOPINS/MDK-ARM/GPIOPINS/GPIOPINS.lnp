@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp.sp
+"gpiopins\startup_stm32f401xc.o"
+"gpiopins\main.o"
+"gpiopins\stm32f4xx_it.o"
+"gpiopins\stm32f4xx_hal_msp.o"
+"gpiopins\stm32f4xx_hal_tim.o"
+"gpiopins\stm32f4xx_hal_tim_ex.o"
+"gpiopins\stm32f4xx_hal_rcc.o"
+"gpiopins\stm32f4xx_hal_rcc_ex.o"
+"gpiopins\stm32f4xx_hal_flash.o"
+"gpiopins\stm32f4xx_hal_flash_ex.o"
+"gpiopins\stm32f4xx_hal_flash_ramfunc.o"
+"gpiopins\stm32f4xx_hal_gpio.o"
+"gpiopins\stm32f4xx_hal_dma_ex.o"
+"gpiopins\stm32f4xx_hal_dma.o"
+"gpiopins\stm32f4xx_hal_pwr.o"
+"gpiopins\stm32f4xx_hal_pwr_ex.o"
+"gpiopins\stm32f4xx_hal_cortex.o"
+"gpiopins\stm32f4xx_hal.o"
+"gpiopins\stm32f4xx_hal_exti.o"
+"gpiopins\system_stm32f4xx.o"
+--strict --scatter "GPIOPINS\GPIOPINS.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "GPIOPINS.map" -o GPIOPINS\GPIOPINS.axf

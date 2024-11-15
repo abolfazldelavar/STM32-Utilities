@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp.sp
+"first_project\startup_stm32f401xc.o"
+"first_project\main.o"
+"first_project\stm32f4xx_it.o"
+"first_project\stm32f4xx_hal_msp.o"
+"first_project\stm32f4xx_hal_tim.o"
+"first_project\stm32f4xx_hal_tim_ex.o"
+"first_project\stm32f4xx_hal_rcc.o"
+"first_project\stm32f4xx_hal_rcc_ex.o"
+"first_project\stm32f4xx_hal_flash.o"
+"first_project\stm32f4xx_hal_flash_ex.o"
+"first_project\stm32f4xx_hal_flash_ramfunc.o"
+"first_project\stm32f4xx_hal_gpio.o"
+"first_project\stm32f4xx_hal_dma_ex.o"
+"first_project\stm32f4xx_hal_dma.o"
+"first_project\stm32f4xx_hal_pwr.o"
+"first_project\stm32f4xx_hal_pwr_ex.o"
+"first_project\stm32f4xx_hal_cortex.o"
+"first_project\stm32f4xx_hal.o"
+"first_project\stm32f4xx_hal_exti.o"
+"first_project\system_stm32f4xx.o"
+--strict --scatter "first_project\first_project.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "first_project.map" -o first_project\first_project.axf

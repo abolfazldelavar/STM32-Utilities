@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp.sp
+"interupt_proj\startup_stm32f401xc.o"
+"interupt_proj\main.o"
+"interupt_proj\stm32f4xx_it.o"
+"interupt_proj\stm32f4xx_hal_msp.o"
+"interupt_proj\stm32f4xx_hal_tim.o"
+"interupt_proj\stm32f4xx_hal_tim_ex.o"
+"interupt_proj\stm32f4xx_hal_rcc.o"
+"interupt_proj\stm32f4xx_hal_rcc_ex.o"
+"interupt_proj\stm32f4xx_hal_flash.o"
+"interupt_proj\stm32f4xx_hal_flash_ex.o"
+"interupt_proj\stm32f4xx_hal_flash_ramfunc.o"
+"interupt_proj\stm32f4xx_hal_gpio.o"
+"interupt_proj\stm32f4xx_hal_dma_ex.o"
+"interupt_proj\stm32f4xx_hal_dma.o"
+"interupt_proj\stm32f4xx_hal_pwr.o"
+"interupt_proj\stm32f4xx_hal_pwr_ex.o"
+"interupt_proj\stm32f4xx_hal_cortex.o"
+"interupt_proj\stm32f4xx_hal.o"
+"interupt_proj\stm32f4xx_hal_exti.o"
+"interupt_proj\system_stm32f4xx.o"
+--strict --scatter "Interupt_proj\Interupt_proj.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Interupt_proj.map" -o Interupt_proj\Interupt_proj.axf
